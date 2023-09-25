@@ -69,7 +69,19 @@ footer{
 	padding: 40px 0 0;
 	background-size: cover;
 }
+.fa-user-md:before {
+    content: "\f0f0";
+    font-size: 43px;
+    color: #02309a;
+    /* text-align: center; */
+}
+.faculty-name-box{
 
+}
+.faculty-name-box p a{
+	color:#0035b0;
+	text-align: center;
+}
 .kode_wrapper,
 section,
 .kf_content_wrap,
@@ -6365,7 +6377,7 @@ top: 40px;
 bottom: 40px;
 left: 0;
 width: 3px;
-background-color: #21cdc0;
+background-color: #0035b0;
 }
 
 .widget_icon{
