@@ -56,14 +56,14 @@
 .kf_cur_catg_des.color-1 > span {
 	color: #10c45c;
 }
-.kf_cur_catg_des.color-1:hover {
-	background-color: #10c45c;
-}
+/* .kf_cur_catg_des.color-1:hover {
+	background-color: #14457b;
+} */
 .kf_cur_catg_des.color-1:before {
-	background-color: #0eb053;
+	background-color: #14457b;
 }
 .kf_cur_catg_des.color-1:hover:before {
-	background-color: #0eb053;
+	background-color: #002750;
 }
 /*color-2*/
 .kf_cur_catg_des.color-2 > span {

@@ -95,9 +95,9 @@
 =================================================
 */ 
 @media (max-width: 991px) {
-	#mobile-header{
+	/* #mobile-header{
 		display:block;
-	}
+	} */
 	.nav_2{
 		display:none;
 	}

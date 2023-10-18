@@ -15,7 +15,7 @@
 	<link href="css/owl.carousel.css" rel="stylesheet">
 	<!-- Pretty Photo CSS -->
 	<link href="css/prettyPhoto.css" rel="stylesheet">
-	<!-- Bx-Slider StyleSheet CSS -->
+		<link rel="stylesheet" href="css/animate.css">
 	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
 	<!-- Font Awesome StyleSheet CSS -->
 	<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 	<link href="css/shortcodes.css" rel="stylesheet">
 	<!-- Custom Main StyleSheet CSS -->
 	<link href="style.css" rel="stylesheet">
-	<!-- Color CSS -->
+		<link href="css/buttonanimate.css" rel="stylesheet">
 	<link href="css/color.css" rel="stylesheet">
 	<!-- Responsive CSS -->
 	<link href="css/responsive.css" rel="stylesheet">
@@ -56,11 +56,21 @@
 				
     			<div class="container">
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-6">
     						<div class="logo_wrap">
     							<a href="#"><img src="images/srims_logo.png" alt=""></a>
     						</div>
     					</div>
+    					<div class="col-md-3">
+    						<div class="admission-btn">
+                                    <a href="#" class="animated-button1">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        ADMISSIONS 2023-24</a>
+                            </div>
+       					</div>
                         <div class="col-md-3">
     						<div class="logo_wrap2">
     							<ul>
@@ -98,7 +108,7 @@
 		                            	<ul>
 		                                	<li><a href="academic.html">Academic Programmes</a></li>
 		                                    <li><a href="admission.html">Admission</a></li>
-		                                	<li><a href="anti-ragine-measure.html">Anti-raging Measures</a></li>
+		                                	<li><a href="files/anti-ragging-measures-website.pdf">Anti-ragging Measures</a></li>
 		                                </ul>
 		                            </li>
 		                            <li><a href="#">Student Corner <span class="caret"></span></a>
@@ -113,40 +123,172 @@
 		                            </li>
 		                            <li><a href="#">Departments <span class="caret"></span></a>
 		                            	<ul>
-											<li><a href="community-medicine.html">Department of Community Medicine</a></li>
-											<li><a href="anatomy.html">Department of Anatomy</a></li>
-											<li><a href="biochemistry.html">Department of Biochemistry</a></li>
-											<li><a href="physiology.html">Department of Physiology</a></li>
-											<li><a href="microbiology.html">Department of Microbiology</a></li>
+                                                    <li><a href="community-medicine.html">Department of Community Medicine</a></li>
+													<li><a href="anotomy.html">Department of Anatomy</a></li>
+													<li><a href="biochemistry.html">Department of Biochemistry</a></li>
+													<li><a href="physiology.html">Department of Physiology</a></li>
+                                                    <li><a href="microbiology.html">Department of Microbiology</a></li>
 
 		                                </ul>
 		                            </li>
 									<li><a href="#">Hospital <span class="caret"></span></a>
 		                            	<ul>
-		                                    <li><a href="emergency-service.html">Emergency Services</a></li>
-											<li><a href="opd-service.html">OPD Services</a></li>
-											<li><a href="special-clinic.html">Special Clinic</a></li>
-											<li><a href="tele-consultation.html">Tele-Consultation Service</a></li>
-											<li><a href="bed-distribution.html">Bed Distribution</a></li>
-											<li><a href="medical-record.html">Medical Record Department</a></li>
-											<li><a href="infection-control-committe.html">Infection Control</a>
-												<ul>
-													<li><a href="infection-control-committe.html">Committee</a></li>
-													<li><a href="infection-committee-function.html">Functions of Commitee</a></li>
-												</ul>
-											</li>
+											<li><a href="Outpatient-Clinical-Services.html">Outpatient Clinical Services</a></li>
+											<li><a href="Diagnostic-Services.html">Diagnostic Services</a></li>
+											<li><a href="Patient-Services.html"> In Patient Services</a></li>
+											<li><a href="Casualty-Clinical-Services.html">Casualty Clinical Services</a></li>
+											<li><a href="Operation-Theatres.html">Operation Theatres</a></li>
+											<li><a href="intensive-care-unit.html">Intensive Care Units</a></li>
+											<li><a href="Central-Laboratory.html">Central Laboratory</a></li>
+											<li><a href=" Radio-Diagnosis-Services.html">Radio-Diagnosis Services</a></li>
+											<li><a href="Pharmacy-Services.html">Pharmacy Services</a></li>
+											<li><a href="Medical-Records-Department.html">Medical Records Department</a></li>
+		                                  
 		                                </ul>
 		                            </li>
-									<li><a href="#">IQAC</a></li>
+									<li><a href="#">FACULTY <span class="caret"></span></a>
+		                            	<ul>
+		                                	<li><a href="teaching-faculty.html">Teaching Faculty</a></li>
+		                                    <li><a href="non-teaching-faculty.html">Non Teaching Faculty</a></li>
+		                                	
+		                                </ul>
+		                            </li>
 									<li><a href="#">Research</a></li>
 									<li><a href="#">News & Events</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="contact.html">Contact</a></li>
     							</ul>
     						</div>
     						<!--kode nav_2 end-->
+
+							<script>
+								function closeNav() {document.getElementById("sidr").style.width = "0";document.getElementById("sidr").style.padding="0"}
+								function openNav() { document.getElementById("sidr").style.width = "250px";}
+								 </script>
     					</div>
     				</div>
-
+					<div id="mySidepanel" class="sidepanel"> 
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+						<ul>
+							<li><a href="index.html">home</a></li>
+							<li class="active">
+								<button type="button" class="collapsible">About SRIMS <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="about.html">SRIMS's Profile</a></li>
+		                                    <li><a href="vision-mission.html">Vision & Mission</a></li>
+		                                    <li><a href="affiliation.html">Affiliation & Accreditation</a></li>
+											<li><a href="annual-report.html">Annual Report</a></li>
+											<li><a href="citizen-charter.html">Citizen Charter</a></li>
+								
+										<!-- <li><a href="affiliationAccreditation.html">Affiliation and
+												Accreditation</a></li> -->
+									</ul>
+								</div>
+								  
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">Administration <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="authorities.html">Management</a></li>
+		                                    <li><a href="committees.html">Committees</a></li>
+		                                    <li><a href="principal-desk.html">Administration</a></li>
+											<li><a href="other-faculties.html"> Other Faculties</a></li>
+									</ul>
+								</div>
+								  
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">Admission & Programmes <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="academic.html">Academic Programmes</a></li>
+		                                    <li><a href="admission.html">Admission</a></li>
+		                                	<li><a href="files/anti-ragging-measures-website.pdf">Anti-ragging Measures</a></li>
+									</ul>
+								</div>
+								  
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">  students Corner <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="result.html">Results</a></li>
+											<li><a href="facilities.html">Facilities</a></li>
+											<li><a href="awards.html">Awards & Recognitions</a></li>
+											<li><a href="academic-calender.html">Academic Calender</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">Hospital<i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="Outpatient-Clinical-Services.html">Outpatient Clinical Services</a></li>
+											<li><a href="Diagnostic-Services.html">Diagnostic Services</a></li>
+											<li><a href="Patient-Services.html"> In Patient Services</a></li>
+											<li><a href="Casualty-Clinical-Services.html">Casualty Clinical Services</a></li>
+											<li><a href="Operation-Theatres.html">Operation Theatres</a></li>
+											<li><a href="intensive-care-unit.html">Intensive Care Units</a></li>
+											<li><a href="Central-Laboratory.html">Central Laboratory</a></li>
+											<li><a href=" Radio-Diagnosis-Services.html">Radio-Diagnosis Services</a></li>
+											<li><a href="Pharmacy-Services.html">Pharmacy Services</a></li>
+											<li><a href="Medical-Records-Department.html">Medical Records Department</a></li>
+										
+									</ul>
+								</div>
+								  
+							</li>
+														<li>
+								
+								<button type="button" class="collapsible">FACILITY <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="teaching-faculty.html">Teaching Faculty</a></li>
+		                                    <li><a href="non-teaching-faculty.html">Non Teaching Faculty</a></li>
+									</ul>
+								</div>
+								  
+							</li>
+									<li><a href="#">Research</a></li>
+									<li><a href="#">News & Events</a></li>
+									<li><a href="contact.html">Contact</a></li>
+					
+						</ul>
+					
+					
+					  </div>
+					  
+					  <button class="openbtn" onclick="openNav()">☰</button> 
+					  <script>
+						function openNav() {
+						  document.getElementById("mySidepanel").style.width = "100%";
+						}
+						
+						function closeNav() {
+						  document.getElementById("mySidepanel").style.width = "0";
+						}
+						</script>
+					<script>
+						var coll = document.getElementsByClassName("collapsible");
+						var i;
+						
+						for (i = 0; i < coll.length; i++) {
+						  coll[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var content = this.nextElementSibling;
+							if (content.style.display === "block") {
+							  content.style.display = "none";
+							} else {
+							  content.style.display = "block";
+							}
+						  });
+						}
+						</script>
     		</div>
     		<!--kode navigation end-->
 		</header>
@@ -178,7 +320,7 @@
         </div>
 
         <!--Banner Wrap End-->
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/scroll-top.gif" alt=""></button>
     	<!--Content Wrap Start-->
     	<div class="kf_content_wrap">
     				
@@ -285,7 +427,28 @@
     </div>
     <!--KF KODE WRAPPER WRAP END-->
 
-    
+        <!--KF KODE WRAPPER WRAP END-->
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
 
 	<!--Bootstrap core JavaScript-->
 	<script src="js/jquery.js"></script>

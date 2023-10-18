@@ -14,7 +14,7 @@
 	<link href="css/owl.carousel.css" rel="stylesheet">
 	<!-- Pretty Photo CSS -->
 	<link href="css/prettyPhoto.css" rel="stylesheet">
-	<!-- Bx-Slider StyleSheet CSS -->
+		<link rel="stylesheet" href="css/animate.css">
 	<link href="css/jquery.bxslider.css" rel="stylesheet"> 
 	<!-- Font Awesome StyleSheet CSS -->
 	<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +28,7 @@
 	<!-- Custom Main StyleSheet CSS -->
 	<link href="style.css" rel="stylesheet">
 	<link href="css/buttonanimate.css" rel="stylesheet">
-	<!-- Color CSS -->
+		<link href="css/buttonanimate.css" rel="stylesheet">
 	<link href="css/color.css" rel="stylesheet">
 	<!-- Responsive CSS -->
 	<link href="css/responsive.css" rel="stylesheet">
@@ -36,7 +36,9 @@
 	<link href="css/selectric.css" rel="stylesheet">
 	<!-- SIDE MENU -->
 	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
-	<style></style>
+	<style>
+
+	</style>
 </head>
 
 <body>
@@ -137,68 +139,157 @@
 											<li><a href="Patient-Services.html"> In Patient Services</a></li>
 											<li><a href="Casualty-Clinical-Services.html">Casualty Clinical Services</a></li>
 											<li><a href="Operation-Theatres.html">Operation Theatres</a></li>
-											<li><a href="Intensive-Care-Units.html"></a>Intensive Care Units</li>
+											<li><a href="intensive-care-unit.html">Intensive Care Units</a></li>
 											<li><a href="Central-Laboratory.html">Central Laboratory</a></li>
 											<li><a href=" Radio-Diagnosis-Services.html">Radio-Diagnosis Services</a></li>
 											<li><a href="Pharmacy-Services.html">Pharmacy Services</a></li>
 											<li><a href="Medical-Records-Department.html">Medical Records Department</a></li>
-		                                    <li><a href="emergency-service.html">Emergency Services</a></li>
-											<li><a href="opd-service.html">OPD Services</a></li>
-											<li><a href="special-clinic.html">Special Clinic</a></li>
-											<li><a href="tele-consultation.html">Tele-Consultation Service</a></li>
-											<li><a href="bed-distribution.html">Bed Distribution</a></li>
-											<li><a href="medical-record.html">Medical Record Department</a></li>
-											<li><a href="infection-control-committe.html">Infection Control</a>
-												<ul>
-													<li><a href="infection-control-committe.html">Committee</a></li>
-													<li><a href="infection-committee-function.html">Functions of Commitee</a></li>
-												</ul>
-											</li>
+		                                  
 		                                </ul>
 		                            </li>
-									<li><a href="#">IQAC</a></li>
+									<li><a href="#">FACULTY <span class="caret"></span></a>
+		                            	<ul>
+		                                	<li><a href="teaching-faculty.html">Teaching Faculty</a></li>
+		                                    <li><a href="non-teaching-faculty.html">Non Teaching Faculty</a></li>
+		                                	
+		                                </ul>
+		                            </li>
 									<li><a href="#">Research</a></li>
 									<li><a href="#">News & Events</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="contact.html">Contact</a></li>
     							</ul>
     						</div>
     						<!--kode nav_2 end-->
-							<a id="simple-menu" href="javascript:void(0)" onclick="openNav()"><i class="fa fa-bars"></i></a>
-							<div id="sidr">
-								<!-- Your content -->
-								<div class="kf-sidebar">
-									<!--KF_SIDEBAR_SEARCH_WRAP START-->
 
-									<!--KF_SIDEBAR_SEARCH_WRAP END-->
-									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-									<!--KF_SIDEBAR_ARCHIVE_WRAP START-->
-									<div class="widget widget-archive ">
-										<ul class="sidebar_archive_des">
-										  <li><a href="">Home</a></li>
-										  <li>
-											<div class="dropdown">
-											<button class="dropbtn">Dropdown</button>
-											<div class="dropdown-content">
-											  <a href="#">Link 1</a>
-											  <a href="#">Link 2</a>
-											  <a href="#">Link 3</a>
-											</div>
-										  </div>
-										</li>
-										
-										</ul>
-									</div>
-									<!--KF_SIDEBAR_ARCHIVE_WRAP END-->
-						
-								</div>
-
-							</div>
 							<script>
 								function closeNav() {document.getElementById("sidr").style.width = "0";document.getElementById("sidr").style.padding="0"}
 								function openNav() { document.getElementById("sidr").style.width = "250px";}
 								 </script>
     					</div>
     				</div>
+					<div id="mySidepanel" class="sidepanel"> 
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+						<ul>
+							<li><a href="index.html">home</a></li>
+							<li class="active">
+								<button type="button" class="collapsible">About SRIMS <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="about.html">SRIMS's Profile</a></li>
+		                                    <li><a href="vision-mission.html">Vision & Mission</a></li>
+		                                    <li><a href="affiliation.html">Affiliation & Accreditation</a></li>
+											<li><a href="annual-report.html">Annual Report</a></li>
+											<li><a href="citizen-charter.html">Citizen Charter</a></li>
+								
+										<!-- <li><a href="affiliationAccreditation.html">Affiliation and
+												Accreditation</a></li> -->
+									</ul>
+								</div>
+								  
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">Administration <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="authorities.html">Management</a></li>
+		                                    <li><a href="committees.html">Committees</a></li>
+		                                    <li><a href="principal-desk.html">Administration</a></li>
+											<li><a href="other-faculties.html"> Other Faculties</a></li>
+									</ul>
+								</div>
+								  
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">Admission & Programmes <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="academic.html">Academic Programmes</a></li>
+		                                    <li><a href="admission.html">Admission</a></li>
+		                                	<li><a href="files/anti-ragging-measures-website.pdf">Anti-ragging Measures</a></li>
+									</ul>
+								</div>
+								  
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">  students Corner <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="result.html">Results</a></li>
+											<li><a href="facilities.html">Facilities</a></li>
+											<li><a href="awards.html">Awards & Recognitions</a></li>
+											<li><a href="academic-calender.html">Academic Calender</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								
+								<button type="button" class="collapsible">Hospital<i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="Outpatient-Clinical-Services.html">Outpatient Clinical Services</a></li>
+											<li><a href="Diagnostic-Services.html">Diagnostic Services</a></li>
+											<li><a href="Patient-Services.html"> In Patient Services</a></li>
+											<li><a href="Casualty-Clinical-Services.html">Casualty Clinical Services</a></li>
+											<li><a href="Operation-Theatres.html">Operation Theatres</a></li>
+											<li><a href="intensive-care-unit.html">Intensive Care Units</a></li>
+											<li><a href="Central-Laboratory.html">Central Laboratory</a></li>
+											<li><a href=" Radio-Diagnosis-Services.html">Radio-Diagnosis Services</a></li>
+											<li><a href="Pharmacy-Services.html">Pharmacy Services</a></li>
+											<li><a href="Medical-Records-Department.html">Medical Records Department</a></li>
+										
+									</ul>
+								</div>
+								  
+							</li>
+														<li>
+								
+								<button type="button" class="collapsible">FACILITY <i class="fa fa-sort-desc" aria-hidden="true" style="padding-left: 5px;"></i></button>
+								<div class="col-content">
+									<ul>
+										<li><a href="teaching-faculty.html">Teaching Faculty</a></li>
+		                                    <li><a href="non-teaching-faculty.html">Non Teaching Faculty</a></li>
+									</ul>
+								</div>
+								  
+							</li>
+									<li><a href="#">Research</a></li>
+									<li><a href="#">News & Events</a></li>
+									<li><a href="contact.html">Contact</a></li>
+					
+						</ul>
+					
+					
+					  </div>
+					  
+					  <button class="openbtn" onclick="openNav()">☰</button> 
+					  <script>
+						function openNav() {
+						  document.getElementById("mySidepanel").style.width = "100%";
+						}
+						
+						function closeNav() {
+						  document.getElementById("mySidepanel").style.width = "0";
+						}
+						</script>
+					<script>
+						var coll = document.getElementsByClassName("collapsible");
+						var i;
+						
+						for (i = 0; i < coll.length; i++) {
+						  coll[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var content = this.nextElementSibling;
+							if (content.style.display === "block") {
+							  content.style.display = "none";
+							} else {
+							  content.style.display = "block";
+							}
+						  });
+						}
+						</script>
     		</div>
     		<!--kode navigation end-->
 		</header>
@@ -216,28 +307,6 @@
 							<h2>MCI/NMC Approved <br>Medical College</h2>
 							<p>We Believe there is nothing more important than Education.</p>
 							<a href="about.html" class="btn-1">read more</a>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="item">
-					<figure>
-						<img src="extra-images/slider1.jpg" alt=""/>
-						<figcaption>
-							<!-- <span>Opening A New World Of Education</span> -->
-							<h2>largest Education Institute</h2>
-							<p></p>
-							<a href="#" class="btn-1">read more</a>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="item">
-					<figure>
-						<img src="extra-images/slider1.jpg" alt=""/>
-						<figcaption>
-							<!-- <span>New Online Courses</span> -->
-							<h2>We bring new online courses</h2>
-							<p>Largest Online Courses available here.</p>
-							<a href="#" class="btn-1">read more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -359,11 +428,35 @@
 									</div>
 									<marquee id="marquee" behavior="scroll" direction="up" onmouseover="javascript:this.stop()" onmouseout="javascript:this.start()" scrollamount="4" scrolldelay="1">
 									<ul class="sidebar_rpost_des">
+										<li style="margin-bottom: 17px;">
+	
+											<a href="files/notice/278.-Exam-Notice-1st-Prof-MBBS-Examination-Nov-Dec2023.pdf" target="_blank"><div class="kode-text">
+												<h6 style="color:white;"><a href="#"><img src="images/new.gif" alt="">Schedule of 1st Professional MBBS Examination November-December, 2023</a></h6>
+												<span style="color:rgb(2 37 118);    font-weight: 500;"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 16 th oct, 2023</span>
+											</div></a>
+										</li>
+										<!--LIST ITEM START-->
+										<li style="margin-bottom: 17px;">
+	
+											<a href="files/notice/273.-Instructions-for-Post-Graduate-PG-Training.pdf" target="_blank"><div class="kode-text">
+												<h6 style="color:white;"><a href="#"><img src="images/new.gif" alt="">Instructions for Post Graduate (PG) Training</a></h6>
+												<span style="color:rgb(2 37 118);    font-weight: 500;"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 13 th oct, 2023</span>
+											</div></a>
+										</li>
+										<!--LIST ITEM START-->
+										<li style="margin-bottom: 17px;">
+	
+											<a href="files/notice/Notice-Durga-Puja-Vacation-2023.pdf" target="_blank"><div class="kode-text">
+												<h6 style="color:white;"><a href="#"><img src="images/new.gif" alt="">Puja Vacation</a></h6>
+												<span style="color:rgb(2 37 118);    font-weight: 500;"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 10 th oct, 2023</span>
+											</div></a>
+										</li>
+										<!--LIST ITEM START-->
 										<!--LIST ITEM START-->
 										<li style="margin-bottom: 17px;">
 	
 											<div class="kode-text">
-												<h6 style="color:white;"><a href="#"><img src="images/new.gif" alt="">Schedule of 3rd Professional MBBS Part I Examination July-August, 2023</a></h6>
+												<h6 style="color:white;"><a href="#">Schedule of 3rd Professional MBBS Part I Examination July-August, 2023</a></h6>
 												<span style="color:rgb(2 37 118);    font-weight: 500;"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 14 July, 2023</span>
 											</div>
 										</li>
@@ -372,7 +465,7 @@
 										<li style="margin-bottom: 17px;">
 	
 											<div class="kode-text">
-												<h6 style="color:white;"><a href="#"><img src="images/new.gif" alt="">Schedule of 2nd Professional MBBS Examination July-August, 2023 (New Regulation)</a></h6>
+												<h6 style="color:white;"><a href="#">Schedule of 2nd Professional MBBS Examination July-August, 2023 (New Regulation)</a></h6>
 												<span style="color:rgb(2 37 118);    font-weight: 500;"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 7 July, 2023</span>
 											</div>
 										</li>
@@ -381,7 +474,7 @@
 										<li style="margin-bottom: 17px;">
 	
 											<div class="kode-text">
-												<h6 style="color:white;"><a href="#"><img src="images/new.gif" alt="">International Yoga Day Celebration In SRIMS & SH</a></h6>
+												<h6 style="color:white;"><a href="#">International Yoga Day Celebration In SRIMS & SH</a></h6>
 												<span style="rgb(2 37 118);"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 21Jun, 2023</span>
 											</div>
 										</li>
@@ -400,6 +493,43 @@
 				</div>
 			</div>
 			<!--COURSE OUTER WRAP END-->
+			<section>
+				<div class="container">
+					<div class="kf_cur_catg_wrap">
+						<!--COURSE CATEGORIES WRAP HEADING START-->
+						<div class="col-md-12">
+
+						</div>
+						<!--COURSE CATEGORIES WRAP HEADING END-->
+
+						<!--COURSE CATEGORIES DES START-->
+						<div class="col-md-6">
+							<div class="kf_cur_catg_des color-1">
+
+								<div class="kf_cur_catg_capstion">
+									<h5 style="    font-weight: 700;">Information under Clause B.1.11</h5>
+									<p>Shri Ramakrishna Institute of Medical Sciences located in Durgapur with 51+ acres campus.</p>
+									<a href="b-1-11.html" class="btn-4" target="_blank">Know More</a>
+								</div>
+							</div>
+						</div>
+						<!--COURSE CATEGORIES DES END-->
+                      <!--COURSE CATEGORIES DES START-->
+                      <div class="col-md-6">
+	                      <div class="kf_cur_catg_des color-1">
+
+		                      <div class="kf_cur_catg_capstion">
+			                      <h5 style="font-weight: 700;">MCI/NMC APPROVED</h5>
+			                      <p>National Medical Commission approved 150 MBBS Seats for Academic Session 2022-23.</p>
+								  <a href="affiliation.html" class="btn-4" target="_blank">Know More</a>
+		                      </div>
+	                      </div>
+                      </div>
+                     <!--COURSE CATEGORIES DES END-->
+
+					</div>
+				</div>
+			</section>
 			<!--KF INTRO WRAP START-->
     		<section>
     			<div class="container">
@@ -455,8 +585,8 @@
                                             <div class="col-md-4">
                                                 <div class="edu2_cur_wrap">
                                                     <figure>
-                                                        <img src="extra-images/cur-wrap-2.jpg" alt="">
-                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                        <img src="extra-images/community_small.jpg" alt="">
+                                                        <figcaption><a href="community-medicine.html">See More</a></figcaption>
                                                     </figure>
                                                     <div class="edu2_cur_des">
                                                         <!-- <span>$20</span> -->
@@ -472,8 +602,8 @@
                                             <div class="col-md-4">
                                                 <div class="edu2_cur_wrap">
                                                     <figure>
-                                                        <img src="extra-images/cur-wrap.jpg" alt="">
-                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                        <img src="extra-images/anatomy_small.jpg" alt="">
+                                                        <figcaption><a href="anotomy.html">See More</a></figcaption>
                                                     </figure>
                                                     <div class="edu2_cur_des">
                                                         <h5><a href="#">Anatomy</a></h5>
@@ -487,8 +617,8 @@
                                             <div class="col-md-4">
                                                 <div class="edu2_cur_wrap">
                                                     <figure>
-                                                        <img src="extra-images/cur-wrap-2.jpg" alt="">
-                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                        <img src="extra-images/biochemistry_small.jpg" alt="">
+                                                        <figcaption><a href="biochemistry.html">See More</a></figcaption>
                                                     </figure>
                                                     <div class="edu2_cur_des">
                                                      
@@ -506,7 +636,7 @@
                                                 <div class="edu2_cur_wrap">
                                                     <figure>
                                                         <img src="extra-images/physiology.jpg" alt="">
-                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                        <figcaption><a href="physiology.html">See More</a></figcaption>
                                                     </figure>
                                                     <div class="edu2_cur_des">
                                                         
@@ -522,7 +652,7 @@
                                                 <div class="edu2_cur_wrap">
                                                     <figure>
                                                         <img src="extra-images/micro-biology.jpg" alt="">
-                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                        <figcaption><a href="microbiology.html">See More</a></figcaption>
                                                     </figure>
                                                     <div class="edu2_cur_des">
                                                     
@@ -533,9 +663,7 @@
                                             </div>
                                             <!-- EDU COURSES WRAP END -->
 										</div>
-                                        <div class="view-all">
-                                        	<a class="btn-3" href="#">View All Cources</a>
-                                        </div>
+
 									</div>
 
 								</div>
@@ -615,7 +743,7 @@
 
 								  </ul>
 								  <br>
-								  <a class="btn-7" href="#">View More</a>
+								  <a class="btn-7" href="Outpatient-Clinical-Services.html">View More</a>
 							</div>
 
 						</div>
@@ -637,28 +765,18 @@
                                     <div class="contact_des">
                                         <h3>Enquiry now</h3>
 										<br>
-										<form>
-                                        <div class="inputs_des des_2">
-                                            <input type="text" placeholder="Name"><i class="fa fa-user"></i>
-                                        </div>
-    
-                                        <div class="inputs_des des_2">
-                                            <input type="text" placeholder="E-mail">
-                                            <i class="fa fa-envelope-o"></i>
-                                        </div>
-                                        <div class="inputs_des des_2">
-                                            <input type="text" placeholder="Phone">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                        <div class="inputs_des des_3">
-                                            <textarea></textarea>
-                                            <i class="fa fa-comments-o"></i>
-                                        </div>
-                                        <div class="inputs_des des_2">
-                                            <button>Send</button>
-                                        </div>
-                                    </div>
-                                </form>
+										<form action="./careermail.php" method="post" onsubmit="return formSubmitConfirmation()">
+											<input type="text" name="name" id="name" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Name" required="" style="border: 1px solid lightgrey;    margin-bottom: 26px;"><br>
+					  <input type="email" name="email" id="email" class="form-control required fl-input" onchange="getVals(this, 'email_field');" placeholder="Email Address" required="" style="border: 1px solid lightgrey;    margin-bottom: 26px;"><br>
+	
+							<input type="text" name="phone" id="phone" class="form-control required fl-input" placeholder="Phone" required="" style="border: 1px solid lightgrey;    margin-bottom: 26px;">
+					<br>
+					  <textarea rows="5" name="message" id="message" style="border: 1px solid #00000038;    margin-bottom: 26px;border-radius: 3px;width:100%;" required="" data-gramm="false" wt-ignore-input="true" data-quillbot-element="e46MxUuWoSw6Lp7qpjz8P"> </textarea>
+<br>
+					
+					  <input type="submit" ><button class="career-button">Submit Now</button>
+					  
+										  </form>
                             </div>
                         </div>
 	    			</div>
@@ -678,20 +796,21 @@
 						</div>
 						<!-- HEADING 2 END-->
 						<!-- TESTEMONIAL SLIDER WRAP START-->
-						<div class="edu2_testemonial_slider_wrap">
-							<div id="owl-demo-9">
-								<div class="item">
+						<div class="edu2_testemonial_slider_wrap" style="width: 100%;">
+							<div id="owl-demo-9" style="width: 100%;">
+								<div class="item" >
 									<!-- TESTEMONIAL SLIDER WRAP START-->
-									<div class="edu_testemonial_wrap">
-										<figure><img src="extra-images/testemonial.1.jpg" alt=""/></figure>
-										<div class="kode-text">
-											<i class="fa fa-quote-right" aria-hidden="true"></i>
-											<p>I am glad that I approached SRIMS for my treatment. With the support and care that I received from the hospital staff and doctors, I have recovered completely.</p>
-											<a href="#">Rahul Dutta<span>- Muchipara, Durgapur</span></a>
-										</div>
-									</div>
+									
 									<!-- TESTEMONIAL SLIDER WRAP END-->
 								</div>								
+							</div>
+							<div class="edu_testemonial_wrap">
+								<!-- <figure><img src="extra-images/testemonial.1.jpg" alt=""/></figure> -->
+								<div class="kode-text">
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+									<p>I am glad that I approached SRIMS for my treatment. With the support and care that I received from the hospital staff and doctors, I have recovered completely.</p>
+									<a href="#">Rahul Dutta<span>- Muchipara, Durgapur</span></a>
+								</div>
 							</div>
 						</div>
 						<!-- TESTEMONIAL SLIDER WRAP END-->
@@ -700,7 +819,170 @@
 			</section>
 			<!--OUR TESTEMONIAL WRAP END-->
 		</div>
+		<section style="    background: #edf2ff;">
+			<div class="container">
+				<div class="row">
+					<!-- HEADING 1 START-->
+					<div class="col-md-12">
+						<div class="kf_edu2_heading2">
+							<h3>Embark on a dynamic life at Shri Ramkrishna Institute of Medical Sciences and Sanaka Hospitals</h3>
+						</div>
+					</div>
+					<!-- HEADING 1 END-->
 
+					<!-- FACULTY SLIDER WRAP START-->
+					<div class="edu2_faculty_wrap">
+						<div id="owl-demo-8" class="owl-carousel owl-theme">
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/1.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/2.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/3.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/4.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/5.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/6.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/7.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/8.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/9.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/10.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/11.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/12.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/13.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/cafeteria.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/demo-room.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+							<div class="item">
+								<!-- FACULTY DES START-->
+								<div class="edu2_faculty_des">
+									<figure style="box-shadow: 6px 4px 10px 0px #0003;">
+										<img src="event/sports.jpg" alt="" />
+									</figure>
+								</div>
+								<!-- FACULTY DES END-->
+							</div>
+						</div>
+					</div>
+					<!-- FACULTY SLIDER WRAP END-->
+				</div>
+			</div>
+		</section>
 		<!--EDU2 FOOTER WRAP START-->
 
 		<!--FOOTER START-->
@@ -810,6 +1092,9 @@
 		  document.body.scrollTop = 0;
 		  document.documentElement.scrollTop = 0;
 		}
+		function formSubmitConfirmation() {
+      return alert("Your message is succesfully sent");
+    }
 		</script>
 	<!--Bootstrap core JavaScript-->
 	<script src="js/jquery.js"></script>
