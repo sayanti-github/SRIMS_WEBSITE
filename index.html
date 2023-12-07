@@ -419,6 +419,36 @@
 							</div>
 						</div>
 
+						<script layout:fragment="normalScript" type="application/javascript">
+							function getAllNotification() {
+								$.ajax({
+									url: '/public/notification/all',
+									type: 'get',
+									success: function(response){
+										$("#addUserModalContent").html(response);
+										$("#addUserModal").modal('show');
+									},
+									error: function(a, b, c) {
+										demo.showErrorNotification("Failed to add user. "+a.responseJSON.error)
+									}
+								});
+							}
+
+							function getTopNotification() {
+								$.ajax({
+									url: '/public/notification/top',
+									type: 'get',
+									success: function(response){
+										$("#addUserModalContent").html(response);
+										$("#addUserModal").modal('show');
+									},
+									error: function(a, b, c) {
+										demo.showErrorNotification("Failed to add user. "+a.responseJSON.error)
+									}
+								});
+							}
+						</script>
+
 						<div class="col-md-5">
 							<!-- EDU2 SEARCH WRAP START -->
 							<div class="kf_edu2_search_wrap">
@@ -475,7 +505,7 @@
 	
 											<div class="kode-text">
 												<h6 style="color:white;"><a href="#">International Yoga Day Celebration In SRIMS & SH</a></h6>
-												<span style="rgb(2 37 118);"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 21Jun, 2023</span>
+												<span style="rgb:(2 37 118);"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 21Jun, 2023</span>
 											</div>
 										</li>
 
