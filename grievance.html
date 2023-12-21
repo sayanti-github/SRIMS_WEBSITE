@@ -43,6 +43,7 @@
 			border-left: none;
 			border-right: none;
 			border-top: none;
+
 			
 		}
 
@@ -50,19 +51,27 @@
     text-align: center;
 }
 
-.inp{
 
 
-}
 
-#cont{
-    border: 2px solid black;
+
+.cont{
+    border: 1px solid black;
     border-radius: 12px;
 }
 
-.inp{
-    border-radius: 5px;
-    border: 1px solid black;
+/* .inp{
+	color: #000000;
+    border: 1px solid #9f9f9f;
+    margin-bottom: 15px;
+    height: 54px;
+	border-radius: 2px solid black;
+	
+} */
+
+.txt{
+	border-radius: 2px solid black;
+	
 }
 	</style>
 </head>
@@ -333,13 +342,13 @@
                     	<!--KF INR BANNER DES Wrap Start-->
                         <div class="kf_inr_ban_des">
                         	<div class="inr_banner_heading">
-								<h3>Affiliation & Accreditation</h3>
+								<h3>Grievance</h3>
                         	</div>
                            
                             <div class="kf_inr_breadcrumb">
 								<ul>
 									<li><a href="index.html">Home</a></li>
-									<li><a href="#">Affiliation & Accreditation</a></li>
+									<li><a href="#">Grievance</a></li>
 								</ul>
 							</div>
                         </div>
@@ -352,81 +361,107 @@
         <!--Banner Wrap End-->
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/scroll-top.gif" alt=""></button>
     	<!--Content Wrap Start-->
-    	<section>
-            <div class="container" id="cont">
-                <div><h2 style="font-size: 30px;line-height: 60px;text-align: center" class="vc_custom_heading font-weight-bold vc_custom_1560163987744">Grievance Form</h2>
-                    <div class="wpb_text_column wpb_content_element  vc_custom_1560164033906">
-                        <div class="wpb_wrapper">
-                            <p style="text-align: center;">Please fill up the form and send your request, we will be happy to assist you.</p>
-                
-                        </div>
+
+
+    <section class="feedback">
+        
+		<div class="container">
+			<div class="cont">
+
+            <!-- <div class="float-child">
+              <div>
+                <img src="images/Career Image.jpg" alt="">
+              </div>
+            </div> -->
+            
+            <div class="float-child" style="background: #ffffff87;margin: auto;float: none;padding: 26px;">
+                <div class="step wizard-step current">
+                    <h3 class="section_title wizard-header" style="padding-bottom: 37px;text-align: center;">Grievance And Feedback Form</h3>
+                    <!-- <div class="form-group add_top_30 fl-is-required" >
+                        
+                        <div class="fl-wrap fl-wrap-input fl-is-required" onsubmit="required()"><label for="name" class="fl-label"><span style="color: #e79800;
+                            font-size: 22px;">* </span>Name</label><input type="text" name="name" id="name" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Name"></div>
                     </div>
-               
-                <!-- rt-cf7 -->
-                
-                <div>
-                <form action="#">
-               
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-row">
-                            <p><span data-name="Name"><input size="60" class="inp" placeholder="Your Name:" value="" type="text" name="Name"></span>
-                            </p>
-                        </div>
+                    <div class="form-group add_top_30 fl-is-required">
+                        
+                        <div class="fl-wrap fl-wrap-input fl-is-required"><label for="name" class="fl-label"><span style="color: #e79800;
+                            font-size: 22px;">* </span>Department</label><input type="text" name="name" id="name" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Department Name"></div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-row">
-                            <p><span><input size="60" class="inp" placeholder="Your Email:" value="" type="email" name="email"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-row">
-                            <p><span><input size="60" class="inp"  placeholder="Your Phone:" value="" type="text" name="YourPhone"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-row">
-                            <p><span data-name="subject"><input size="60" class="inp"  placeholder="Subject:" value="" type="text" name="subject"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-row">
-                            <p><span data-name="address"><input size="60" class="inp" placeholder="Address:" value="" type="text" name="address"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-row">
-                            <p><span data-name="type"><select class="inp"  name="type"><option value="Staff">Staff</option><option value="Student">Student</option><option value="Faculty">Faculty</option></select></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-row ">
-                            <p><span data-name="message"><textarea cols="130" rows="10" class="inp"  placeholder="Message:" name="message"></textarea></span>
-                            </p>
-                        </div>
+                    <div class="form-group add_top_30 fl-is-required">
+                        
+                        <div class="fl-wrap fl-wrap-input fl-is-required"><label for="name" class="fl-label"><span style="color: #e79800;
+                            font-size: 22px;">* </span>Semester</label><input type="text" name="name" id="name" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Semester"></div>
                     </div>
 
-                     <div class="col-md-12">
-                        <div class="form-row ">
-                            <p>
-                                <button>send</button>
-                            </p>
-                        </div>
+                    <div class="form-group fl-is-required">
+                        
+                        <div class="fl-wrap fl-wrap-input fl-is-required"><label for="phone" class="fl-label"><span style="color: #e79800;
+                            font-size: 22px;">* </span>Contact Number</label><input type="text" name="phone" id="phone" class="form-control required fl-input" placeholder="Phone"></div>
                     </div>
-                    
-                </div>
-                </form>
-                </div>
-            <!-- rt-cf7 -->
+                    <div class="form-group fl-is-required">
+                        
+                        <div class="fl-wrap fl-wrap-input fl-is-required"><label for="email" class="fl-label"><span style="color: #e79800;
+                            font-size: 22px;">* </span>Email Address</label><input type="email" name="email" id="email" class="form-control required fl-input" onchange="getVals(this, 'email_field');" placeholder="Email Address"></div>
+                    </div>
                
-               </div>
+                 
+                    <div class="fl-wrap fl-wrap-input fl-is-required">
+                      <label for="email" class="fl-label"><span style="color: #e79800;
+                        font-size: 22px;">* </span>Message</label>
+                      <textarea rows="9" name="comment" form="usrform" style="border: 1px solid #00000038;border-radius: 3px;width:100%;">
+                       </textarea>
+                    </div>
+      <br>
+                <div class="center">
+<a href="mailto:registrar@setgoi.com" class="career-button" onsubmit="required()">Sumit Now</a>
+                </div> -->
+
+                <form action="./sendemail.php" method="post" onsubmit="return formSubmitConfirmation()">
+
+                    <label for="name" class="fl-label"><span style="color: #e79800;
+                        font-size: 22px;">* </span>Name</label><input type="text" name="name" id="name" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Name" required="" fdprocessedid="i59jy" style="border: 1px solid #9d9d9d;
+    height: 45px;">
+<br><br>
+                    <label for="department" class="fl-label"><span style="color: #e79800;
+                      font-size: 22px;">* </span>Department</label><input type="text" name="department" id="department" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Department Name" required="" fdprocessedid="kfp4ee" style="border: 1px solid #9d9d9d;
+    height: 45px;">
+
+<br><br>
+<label for="name" class="fl-label"><span style="color: #e79800;
+    font-size: 22px;">* </span>Semester</label><input type="text" name="sem" id="sem" class="form-control required fl-input" onchange="getVals(this, 'name_field');" placeholder="Semester" required="" fdprocessedid="tc0zj" style="border: 1px solid #9d9d9d;
+    height: 45px;">
+
+<br><br>
+<label for="phone" class="fl-label"><span style="color: #e79800;
+    font-size: 22px;">* </span>Contact Number</label><input type="text" name="phone" id="phone" class="form-control required fl-input" placeholder="Phone" required="" fdprocessedid="s2xa0c" style="border: 1px solid #9d9d9d;
+    height: 45px;">
+<br><br>
+<label for="email" class="fl-label"><span style="color: #e79800;
+    font-size: 22px;">* </span>Email Address</label><input type="email" name="email" id="email" class="form-control required fl-input" onchange="getVals(this, 'email_field');" placeholder="Email Address" required="" fdprocessedid="7y763" style="border: 1px solid #9d9d9d;
+    height: 45px;">
+<br>
+
+
+
+<br>
+<label for="message" class="fl-label"><span style="color: #e79800;
+    font-size: 22px;">* </span>Message</label>
+  <textarea rows="9" name="message" id="message" style="border: 1px solid #00000038;border-radius: 3px;width:100%;" required="">   </textarea>
+   <br> 
+   
+   <div class="center" style="margin-top:30px;">
+    <input type="submit" value="Submit"><button class="career-button" fdprocessedid="36i11o">Submit Now</button>
+   </div>
+
+
+
+                  </form> 
+                </div>
             </div>
-        </section>
+		</div>
+          </div>
+		
+    </section>
 
 		<!--FOOTER START-->
 		<footer>
