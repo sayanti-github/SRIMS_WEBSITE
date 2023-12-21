@@ -37,7 +37,11 @@
 	<!-- SIDE MENU -->
 	<link rel="stylesheet" href="css/jquery.sidr.dark.css">
 	<style>
+		
 
+/* .container {
+    width: 980px;
+} */
 	</style>
 </head>
 
@@ -93,8 +97,9 @@
 		                                    <li><a href="about.html">SRIMS's Profile</a></li>
 		                                    <li><a href="vision-mission.html">Vision & Mission</a></li>
 		                                    <li><a href="affiliation.html">Affiliation & Accreditation</a></li>
-											<li><a href="annual-report.html">Annual Report</a></li>
+											<li><a href="#">Annual Report</a></li>
 											<li><a href="citizen-charter.html">Citizen Charter</a></li>
+											<li><a href="college-info.html">College Information as on 07.01.2022 as per NMC circular</a></li>
 		                                </ul>
 		                            </li>
 		                            <li><a href="#">Administration <span class="caret"></span></a>
@@ -109,7 +114,7 @@
 		                            	<ul>
 		                                	<li><a href="academic.html">Academic Programmes</a></li>
 		                                    <li><a href="admission.html">Admission</a></li>
-		                                	<li><a href="files/anti-ragging-measures-website.pdf">Anti-ragging Measures</a></li>
+		                                	<li><a href="anti-ragging-measure.html">Anti-ragging Measures</a></li>
 		                                </ul>
 		                            </li>
 		                            <li><a href="#">Student Corner <span class="caret"></span></a>
@@ -144,6 +149,7 @@
 											<li><a href=" Radio-Diagnosis-Services.html">Radio-Diagnosis Services</a></li>
 											<li><a href="Pharmacy-Services.html">Pharmacy Services</a></li>
 											<li><a href="Medical-Records-Department.html">Medical Records Department</a></li>
+											<li><a href="#">Waste Management</a></li>
 		                                  
 		                                </ul>
 		                            </li>
@@ -178,8 +184,9 @@
 										<li><a href="about.html">SRIMS's Profile</a></li>
 		                                    <li><a href="vision-mission.html">Vision & Mission</a></li>
 		                                    <li><a href="affiliation.html">Affiliation & Accreditation</a></li>
-											<li><a href="annual-report.html">Annual Report</a></li>
+											<li><a href="#">Annual Report</a></li>
 											<li><a href="citizen-charter.html">Citizen Charter</a></li>
+											<li><a href="college-info.html">College Information as on 07.01.2022 as per NMC circular</a></li>
 								
 										<!-- <li><a href="affiliationAccreditation.html">Affiliation and
 												Accreditation</a></li> -->
@@ -207,7 +214,7 @@
 									<ul>
 										<li><a href="academic.html">Academic Programmes</a></li>
 		                                    <li><a href="admission.html">Admission</a></li>
-		                                	<li><a href="files/anti-ragging-measures-website.pdf">Anti-ragging Measures</a></li>
+		                                	<li><a href="anti-ragging-measure.html">Anti-ragging Measures</a></li>
 									</ul>
 								</div>
 								  
@@ -239,6 +246,7 @@
 											<li><a href=" Radio-Diagnosis-Services.html">Radio-Diagnosis Services</a></li>
 											<li><a href="Pharmacy-Services.html">Pharmacy Services</a></li>
 											<li><a href="Medical-Records-Department.html">Medical Records Department</a></li>
+											<li><a href="#">Waste Management</a></li>
 										
 									</ul>
 								</div>
@@ -419,6 +427,36 @@
 							</div>
 						</div>
 
+						<script layout:fragment="normalScript" type="application/javascript">
+							function getAllNotification() {
+								$.ajax({
+									url: '/public/notification/all',
+									type: 'get',
+									success: function(response){
+										$("#addUserModalContent").html(response);
+										$("#addUserModal").modal('show');
+									},
+									error: function(a, b, c) {
+										demo.showErrorNotification("Failed to add user. "+a.responseJSON.error)
+									}
+								});
+							}
+
+							function getTopNotification() {
+								$.ajax({
+									url: '/public/notification/top',
+									type: 'get',
+									success: function(response){
+										$("#addUserModalContent").html(response);
+										$("#addUserModal").modal('show');
+									},
+									error: function(a, b, c) {
+										demo.showErrorNotification("Failed to add user. "+a.responseJSON.error)
+									}
+								});
+							}
+						</script>
+
 						<div class="col-md-5">
 							<!-- EDU2 SEARCH WRAP START -->
 							<div class="kf_edu2_search_wrap">
@@ -475,7 +513,7 @@
 	
 											<div class="kode-text">
 												<h6 style="color:white;"><a href="#">International Yoga Day Celebration In SRIMS & SH</a></h6>
-												<span style="rgb(2 37 118);"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 21Jun, 2023</span>
+												<span style="rgb:(2 37 118);"><i class="fa fa-clock-o" style="margin-left: 10px;"></i> 21Jun, 2023</span>
 											</div>
 										</li>
 
@@ -497,13 +535,13 @@
 				<div class="container">
 					<div class="kf_cur_catg_wrap">
 						<!--COURSE CATEGORIES WRAP HEADING START-->
-						<div class="col-md-12">
+						<!-- <div class="col-md-12">
 
-						</div>
+						</div> -->
 						<!--COURSE CATEGORIES WRAP HEADING END-->
 
 						<!--COURSE CATEGORIES DES START-->
-						<div class="col-md-6">
+						<div class="col-md-4">
 							<div class="kf_cur_catg_des color-1">
 
 								<div class="kf_cur_catg_capstion">
@@ -515,7 +553,7 @@
 						</div>
 						<!--COURSE CATEGORIES DES END-->
                       <!--COURSE CATEGORIES DES START-->
-                      <div class="col-md-6">
+                      <div class="col-md-4">
 	                      <div class="kf_cur_catg_des color-1">
 
 		                      <div class="kf_cur_catg_capstion">
@@ -526,6 +564,17 @@
 	                      </div>
                       </div>
                      <!--COURSE CATEGORIES DES END-->
+					 <div class="col-md-4">
+						<div class="kf_cur_catg_des color-1">
+
+							<div class="kf_cur_catg_capstion">
+								<h5 style="font-weight: 700;">Grievance</h5>
+								<p>Online Grievance Redress And Monitoring System.
+									We are happy to assist you.</p>
+								<a href="grievance.html" class="btn-4" target="_blank">Know More</a>
+							</div>
+						</div>
+					</div>
 
 					</div>
 				</div>
@@ -680,34 +729,35 @@
 
 			<!--COUNTER SECTION START-->
 			<section class="edu2_counter_wrap">
-				<div class="container">
+				<div class="row container">
 					<!--EDU2 COUNTER DES START-->
-					<div class="edu2_counter_des">
+					<div class="col-md-3 edu2_counter_des">
 						<span><i class="icon-group2"></i></span>
 						<h3 class="counter">150</h3>
 						<h5>Doctors</h5>
 					</div>
 					<!--EDU2 COUNTER DES END-->
 					<!--EDU2 COUNTER DES START-->
-					<div class="edu2_counter_des">
+					<div class="col-md-3 edu2_counter_des">
 						<span><i class="icon-book236"></i></span>
 						<h3 class="counter">525</h3>
 						<h5>Procedures</h5>
 					</div>
 					<!--EDU2 COUNTER DES END-->
 					<!--EDU2 COUNTER DES START-->
-					<div class="edu2_counter_des">
+					<div class="col-md-3 edu2_counter_des">
 						<span><i class="icon-win5"></i></span>
 						<h3 class="counter">22,000</h3>
 						<h5>Happy Patients</h5>
 					</div>
+					
 					<!--EDU2 COUNTER DES END-->
 					<!--EDU2 COUNTER DES START-->
-					<!-- <div class="edu2_counter_des">
+					<div class="col-md-3 edu2_counter_des">
 						<span><i class=" icon-user255"></i></span>
 						<h3 class="counter">370</h3>
-						<h5>CERTIFIED TEACHERS</h5>
-					</div> -->
+						<h5>24x7 Emergency</h5>
+					</div>
 					<!--EDU2 COUNTER DES END-->
 				</div>
 			</section>
@@ -737,7 +787,6 @@
 									<li style="padding: 10px 0;"><h6 style="color:white;"><i class="fa fa-check-square-o" aria-hidden="true"></i> 4 major Operation Theatres</h6></li>
 									<li style="padding: 10px 0;"><h6 style="color:white;"><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 major Emergency Operation Theatre</h6></li>
 									<li style="padding: 10px 0;"><h6 style="color:white;"><i class="fa fa-check-square-o" aria-hidden="true"></i> 1 minor Operation Theatre (OPD)</h6></li>
-									
 									<li style="padding: 10px 0;"><h6 style="color:white;"><i class="fa fa-check-square-o" aria-hidden="true"></i> 2 labour rooms</h6></li>
 
 
@@ -1009,6 +1058,7 @@
 									<li><a href="#">Hospital</a></li>
 									<li><a href="#">Facilities</a></li>
 									<li><a href="#">News & Events</a></li>
+									<li><a href="#">Waste Management</a></li>
 								</ul>
 							</div>
 						</div>
